@@ -1,17 +1,26 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import img1 from "../../images/coding-man.jpg";
+import img2 from "../../images/programmer-scanning-screen-his-smartwatch-with-smartphone-camera.jpg";
+import img3 from "../../images/rear-view-programmer-working-all-night-long.jpg";
+import img4 from "../../images/web-design-concept-with-drawings.jpg";
 
 const Home = () => {
   return (
-    <div className="w-full p-1 mb-0">
-      <h2 className="fw-bold text-center">All Programing languages </h2>
-      <p className="text-center fw-semibold">We are best programmer</p>
+    <Container className="w-full p-1 mb-0 ">
+      <h2 className="fw-bold text-center mt-4 text-danger">
+        All Programing languages{" "}
+      </h2>
+      <p className="text-center fw-semibold mt-2 mb-4">
+        We are best programmer
+      </p>
       <Carousel className="mt-2 ">
         <Carousel.Item className="">
           <img
             style={{ height: "500px" }}
             className="d-block w-100 rounded"
-            src="https://thumbs.dreamstime.com/b/phone-hand-python-language-symbol-white-mobile-screen-coding-software-concept-abstract-digital-wireframe-low-poly-155898716.jpg"
+            src={img1}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -22,7 +31,7 @@ const Home = () => {
           <img
             style={{ height: "500px" }}
             className="d-block w-100 rounded"
-            src="https://content.instructables.com/ORIG/FTP/GXQA/HM768QN0/FTPGXQAHM768QN0.jpg?auto=webp"
+            src={img2}
             alt="Second slide"
           />
 
@@ -34,7 +43,7 @@ const Home = () => {
           <img
             style={{ height: "500px" }}
             className="d-block w-100 rounded"
-            src="https://i.pinimg.com/originals/3c/af/d1/3cafd1bfdbc7191aaf49981b3e3d0594.png"
+            src={img3}
             alt="Third slide"
           />
 
@@ -45,9 +54,9 @@ const Home = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            style={{ width: "626px", height: "500px" }}
+            style={{ height: "500px" }}
             className="d-block w-100 rounded"
-            src="https://www.careergirls.org/wp-content/uploads/2015/06/Computer_Programmer1920X10180.jpg"
+            src={img4}
             alt="Third slide"
           />
 
@@ -57,7 +66,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </div>
+    </Container>
   );
 };
 

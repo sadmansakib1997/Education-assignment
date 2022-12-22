@@ -1,13 +1,16 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Blog = () => {
   return (
-    <div>
-      <div className="text-center fw-bold">This is Blog Site</div>
+    <Container>
+      <div className="text-center fw-bold mt-5 mb-5 fs-1 text-danger">
+        This is Blog Site
+      </div>
 
-      <div className="ms-3">
+      <div className="">
         <div>
-          <h2>.1 what is cors?</h2>
+          <h2 className="text-success  fw-bold">.1 what is cors?</h2>
           <p>
             Cross-Origin Resource Sharing (CORS) is an HTTP-header based
             mechanism that allows a server to indicate any origins (domain,
@@ -16,7 +19,7 @@ const Blog = () => {
           </p>
         </div>
         <div>
-          <h2>
+          <h2 className="text-success  fw-bold">
             2.Why are you using firebase?What other options do you have to
             implement authentication?
           </h2>
@@ -31,7 +34,9 @@ const Blog = () => {
           </p>
         </div>
         <div>
-          <h2>.3 How does the private route work?</h2>
+          <h2 className="text-success  fw-bold">
+            .3 How does the private route work?
+          </h2>
           <p>
             The react private route component renders child components
             (children) if the user is logged in. If not logged in the user is
@@ -45,7 +50,9 @@ const Blog = () => {
           </p>
         </div>
         <div>
-          <h2>.4 What is Node? How does Node work?</h2>
+          <h2 className="text-success fw-bold">
+            .4 What is Node? How does Node work?
+          </h2>
           <p>
             It is a used as backend service where javascript works on the
             server-side of the application. This way javascript is used on both
@@ -55,7 +62,7 @@ const Blog = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

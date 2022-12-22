@@ -10,10 +10,13 @@ const LeftSideNav = () => {
   }, []);
   return (
     <div className="mt-4 shadow px-4 border rounded text-center py-2">
-      <h3>Course</h3>
+      <h3 className="mb-4 text-danger">COURSE</h3>
       {courses.map((course) => (
         <p key={course.id}>
-          <Link className="fw-bold" to={`/courseDetails/${course.id}`}>
+          <Link
+            className="fw-bold text-success"
+            to={`/courseDetails/${course.id}`}
+          >
             {course.name}
           </Link>
         </p>

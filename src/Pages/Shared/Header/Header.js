@@ -30,24 +30,24 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand as={Link} to={"/"}>
+        <Navbar.Brand className="me-4 fw-bold" as={Link} to={"/"}>
           {" "}
-          Education
+          EDUCATION
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to={"/"}>
-              Home
+            <Nav.Link className="me-4 text-white" as={Link} to={"/"}>
+              HOME
             </Nav.Link>
-            <Nav.Link as={Link} to={"/blog"}>
-              Blog
+            <Nav.Link className="me-4  text-white" as={Link} to={"/blog"}>
+              BLOG
             </Nav.Link>
-            <Nav.Link as={Link} to={"/courses"}>
-              Courses
+            <Nav.Link className="me-4  text-white" as={Link} to={"/courses"}>
+              COURSES
             </Nav.Link>
 
-            <Nav.Link as={Link} to={"/faq"}>
+            <Nav.Link className="me-4  text-white" as={Link} to={"/faq"}>
               FAQ
             </Nav.Link>
           </Nav>
